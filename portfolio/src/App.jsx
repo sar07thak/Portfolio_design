@@ -1,7 +1,5 @@
 import React from 'react'
-// import SmoothFollower from './components/SmoothFollower '
 import Home from './pages/Home'
-// import Scroll from './components/Scroll'
 import Work from './pages/Work'
 import { Route, Routes } from 'react-router'
 import About from './pages/About'

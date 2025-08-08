@@ -1,15 +1,67 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { IoGrid } from "react-icons/io5";
 import { FiCopy } from "react-icons/fi";
 import { Link } from 'react-router-dom'; 
 import image from "../assets/a.jpg";
 import Navbar from '../components/Navbar';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 
-
-// --- Main Hero Component ---
 const Hero = () => {
-  // Function to handle copying text to clipboard
+  const headingRef = useRef(null);
+  const imageRef = useRef(null);
+  const bioRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(headingRef.current,
+        { y: 100, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 2,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: headingRef.current,
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+          }
+        });
+
+      gsap.fromTo(imageRef.current,
+        { scale: 0.5, opacity: 0 },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 2,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: imageRef.current,
+            start: "top 85%",
+            toggleActions: "play none none reverse"
+          }
+        });
+
+      gsap.fromTo(bioRef.current,
+        { y: 100, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 2,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: bioRef.current,
+            start: "top 90%",
+            toggleActions: "play none none reverse"
+          }
+        });
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   const copyToClipboard = (text) => {
     const textArea = document.createElement("textarea");
     textArea.value = text;
@@ -31,8 +83,7 @@ const Hero = () => {
           <Navbar />
 
           <main className="relative">
-            {/* --- Desktop-only Profile Image --- */}
-            <div className="absolute top-0 right-0 -mt-8 hidden lg:block">
+            <div ref={imageRef} className="absolute top-0 right-0 -mt-8 hidden lg:block">
               <img
                 src={image}
                 alt="Sarthak Gupta"
@@ -41,23 +92,20 @@ const Hero = () => {
               />
             </div>
 
-            {/* --- Mobile-only Header (Image) --- */}
             <div className="flex justify-between items-center mb-8 lg:hidden">
               <img
-                src={image.replace('150x150', '100x100')} // Use a smaller placeholder for mobile
+                src={image.replace('150x150', '100x100')}
                 alt="Sarthak Gupta"
                 className="w-32 h-32 rounded-full object-cover"
                 onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/100x100/e0e0e0/000000?text=Error'; }}
               />
             </div>
 
-            {/* Main Title and Email Section */}
-            <div className="mb-12 md:mb-10">
+            <div ref={headingRef} className="mb-12 md:mb-10">
               <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[9rem] font-bold tracking-tighter leading-none">
                 SARTH
                 <span className="relative">
                   A
-                  {/* This creates the dot inside the 'A' for DESKTOP ONLY */}
                   <span className="hidden lg:block absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-light">
                     .
                   </span>
@@ -67,7 +115,6 @@ const Hero = () => {
               <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[9rem] font-bold tracking-tighter leading-none">
                 GUPTA
               </h1>
-              {/* Email with Copy button */}
               <div className="mt-8">
                 <button
                   onClick={() => copyToClipboard('sarthak75220@gmail.com')}
@@ -79,9 +126,8 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Bottom Section with Bio */}
-            <div className="flex justify-start lg:justify-end ">
-              <div className="w-full lg:w-[45%] ">
+            <div ref={bioRef} className="flex justify-start lg:justify-end">
+              <div className="w-full lg:w-[45%]">
                 <p className="text-2xl md:text-3xl font-medium leading-relaxed">
                   Hello, I'm a web developer specializing
                   in modern web design — based in Delhi, working
@@ -96,5 +142,4 @@ const Hero = () => {
   )
 }
 
-
-export default Hero
+export default Hero;

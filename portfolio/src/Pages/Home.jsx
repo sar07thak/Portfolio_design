@@ -1,5 +1,6 @@
 import Project from "../components/Project";
 import Skill from "../components/Skill";
+import Footer from "./Footer";
 import Hero from "./Hero";
 
 // Main component for the entire page
@@ -19,6 +20,8 @@ const Home = () => {
       <Project />
       <hr className='border border-gray-200' />
       <Skill />
+      <hr className='border border-gray-200' />
+      <Footer />
     </>
   );
 };
