@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const Work = () => {
   return (
-    <div id="Work" className="min-h-screen bg-gray-400 text-white" >Work</div>
+    <>
+     <Navbar />
+    </>
   )
 }
 
