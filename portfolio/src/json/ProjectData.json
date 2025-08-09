@@ -1,32 +1,62 @@
 [
   {
-    "name": "Sarthak Gupta",
-    "image": "https://source.unsplash.com/600x600/?man,developer",
-    "url": "#"
+    "name": "ExpenseTracker",
+    "image": "./src/assets/expense.jpg",
+    "WorkingUrl": "https://expensetracker-front-rpp5.onrender.com/",
+    "githubUrl" : "https://github.com/sar07thak/ExpenseTracker",
+    "type" : "MERN" ,
+    "year" : 2025 ,
+    "about" : "The Expense Tracker App is a full-stack MERN (MongoDB, Express.js, React, Node.js) application designed to help users manage their finances effortlessly. It allows users to securely sign up or log in, track income and expenses with timestamps, upload avatar images, and view a responsive dashboard. Built with React and Tailwind CSS, the app ensures a clean and interactive UI. Data is securely stored using MongoDB Atlas, and the app is fully deployed on Render, offering accessibility across devices.",
+    "shortDescription" : "Sure! Here's a similar short description for your Expense Tracker App project in the same style: The Expense Tracker project is a sleek and functional addition to our portfolio, combining seamless UI with powerful backend logic to help users manage income and expenses effortlessly in real-time."
   },
   {
-    "name": "Ayesha Khan",
-    "image": "https://source.unsplash.com/600x600/?woman,designer",
-    "url": "#"
+    "name": "E-Commerece",
+    "image": "./src/assets/eCom.jpg",
+     "WorkingUrl": "https://e-commerce-mern-frontend-vr2x.onrender.com/login",
+     "githubUrl" : "https://github.com/sar07thak/E-COMMERCE-MERN",
+    "type" : "MERN" ,
+    "year" : 2025 ,
+    "about" : "The MERN E-Commerce Platform is a complete full-stack application built with MongoDB, Express.js, React, and Node.js, offering a seamless shopping experience for both users and admins. Customers can sign up, browse products, manage carts, and place orders with ease, while JWT authentication ensures secure access. The platform also includes a dedicated Admin Panel for managing products, users, and orders, along with real-time dashboard stats.The frontend is built using React, Tailwind CSS, and Context API for state management, providing a clean and responsive interface. The backend leverages Express, Mongoose, and JWT for robust and scalable data handling. Hosted on Render and using MongoDB Atlas for the database, the platform is designed for performance and reliability in production environments.",
+    "shortDescription" : "The **MERN E-Commerce Platform** is a dynamic, full-featured addition to our portfolio, combining sleek UI with powerful backend logic to deliver a seamless and secure online shopping experience for users and admins alike."
   },
   {
-    "name": "Rohit Mehra",
-    "image": "https://source.unsplash.com/600x600/?man,programmer",
-    "url": "#"
+    "name": "GuessNumber",
+    "image": "./src/assets/guess.jpg",
+    "WorkingUrl": "https://sar07thak.github.io/GuessNumber/",
+    "githubUrl" : "https://github.com/sar07thak/GuessNumber?tab=readme-ov-file",
+    "year" : 2024 ,
+    "type" : "Frontend" ,
+    "about" : "The GuessNumber Game is a fun and interactive web-based game built using HTML, CSS, and JavaScript. Players try to guess a randomly generated number within a limited number of attempts, receiving real-time feedback after each guess. The game features a clean and responsive design with simple logic that makes it engaging for all age groups. It's a great demonstration of core JavaScript concepts like DOM manipulation, conditionals, and event handling.",
+    "shortDescription" : "The GuessNumber Game brings classic number guessing to life with a modern touch, blending minimalist design with responsive interactions. Built with pure HTML, CSS, and JavaScript, it's a quick and fun challenge for users of all ages."
   },
   {
-    "name": "Meera Joshi",
-    "image": "https://source.unsplash.com/600x600/?woman,developer",
-    "url": "#"
+    "name": "Portfolio",
+    "image": "./src/assets/port.jpg",
+    "WorkingUrl": "#",
+    "githubUrl" : "https://github.com/sar07thak/Portfolio_design",
+    "type" : "ReactJS" ,
+    "year" : 2025 ,
+    "about" : "The SAGU Portfolio is a sleek and modern personal website crafted by **Sarthak Gupta** using **React.js**. Inspired by minimal design, it showcases creativity and professionalism through smooth animations and responsive layouts. Enhanced with popular libraries like **React Router**, **Framer Motion**, **GSAP**, and **React-Bits**, the site offers fluid navigation, dynamic transitions, and interactive UI elements. Perfect for developers and designers, it includes sections like Home, Work, About, and Contact—fully customizable for a strong online presence. Optimized for performance and accessibility, this portfolio reflects Sarthak’s passion for clean code and cutting-edge frontend development.---Let me know if you'd like a shorter version too!",
+    "shortDescription" : "The SAGU Portfolio is a bold, interactive showcase by Sarthak Gupta, built with React.js and enhanced by modern libraries like GSAP and Framer Motion — where clean design meets fluid user experience."
   },
    {
-    "name": "Meera Joshi",
-    "image": "https://source.unsplash.com/600x600/?woman,developer",
-    "url": "#"
+    "name": "Furniture",
+    "image": "./src/assets/fur.jpg",
+    "WorkingUrll": "https://furnishme.netlify.app/",
+    "githubUrl" : "https://github.com/sar07thak/E-COMMERCE-WEBSITE?tab=readme-ov-file",
+    "type" : "Frontend" ,
+    "year" : 2024 ,
+    "about" : "The E-Commerce Website is a fully responsive online shopping platform developed using HTML, CSS, and Vanilla JavaScript. Designed with a clean, user-friendly interface, it offers dynamic product listings, real-time cart management, and a smooth checkout flow. The site includes features like product search, filtering, and sorting to enhance user experience across all devices. Version-controlled via GitHub, the project also integrates ChatGPT to streamline development and improve functionality with AI-driven suggestions. Its modular, well-organized codebase makes it easy to customize and maintain, making it an ideal foundation for personal or beginner-level e-commerce projects.",
+    "shortDescription" : "The Furniture Haven project is a warm, inviting digital space in our portfolio, where handcrafted code meets handcrafted design—each element styled to reflect the elegance and comfort of modern living spaces"
   },
   {
     "name": "Meera Joshi",
-    "image": "https://source.unsplash.com/600x600/?woman,developer",
-    "url": "#"
+    "image": "",
+    "WorkingUrl": "https://ai-image-identifier-three.vercel.app/",
+    "githubUrl" : "https://github.com/sar07thak/AI-Image-Identifier",
+    "type" : "GenAi" ,
+    "year" : 2025 ,
+    "about" : "AI Image Identifier is a sleek React web app that uses the Google Gemini API to analyze and describe uploaded images. With drag-and-drop support, responsive design, and smooth error handling, it offers an intuitive experience for users. Built using React and Tailwind CSS, this project showcases how to integrate advanced AI capabilities into modern frontend applications.",
+    "shortDescription" : "AI Image Identifier is a smart, minimal web app that turns images into words using the power of Google Gemini. Upload or drag-and-drop a photo, and let AI generate detailed, human-like descriptions—all within a clean, responsive interface."
   }
 ]

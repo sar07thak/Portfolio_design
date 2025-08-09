@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import { IoGrid } from "react-icons/io5";
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 
-// You can replace this placeholder with your actual image import
-// import image from "../assets/a.jpg";
 const image = "https://placehold.co/150x150/e0e0e0/000000?text=SG";
 
-
-// --- Reusable Navbar Component ---
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // SVG component for the checkered close icon
   const CheckeredCloseIcon = () => (
     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="border border-black">
       <path d="M0 0H14V14H0V0Z" fill="black" />
@@ -23,13 +19,18 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Header Section */}
-      <header className="flex justify-between items-center mb-16 md:mb-32">
+      {/* Animated Header Section */}
+      <motion.header
+        className="flex justify-between items-center mb-16 md:mb-32"
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      >
         <div className="text-3xl font-bold tracking-widest">
           <Link to="/">SAGU</Link>
         </div>
 
-        {/* --- DESKTOP NAVIGATION --- */}
+        {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-6">
           {isMenuOpen ? (
             <>
@@ -47,7 +48,7 @@ const Navbar = () => {
           )}
         </nav>
 
-        {/* --- MOBILE NAVIGATION TOGGLE --- */}
+        {/* Hamburger Icon for Mobile */}
         <button
           className="lg:hidden relative z-50"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -55,9 +56,9 @@ const Navbar = () => {
         >
           {isMenuOpen ? <CheckeredCloseIcon /> : <IoGrid size={28} />}
         </button>
-      </header>
+      </motion.header>
 
-      {/* Full-screen Menu Overlay for MOBILE ONLY */}
+      {/* Mobile Menu Overlay */}
       <div
         className={`lg:hidden fixed inset-0 bg-white z-40 transition-opacity duration-300 ease-in-out
                     ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
@@ -72,5 +73,4 @@ const Navbar = () => {
   );
 };
 
-
-export default Navbar
+export default Navbar;
