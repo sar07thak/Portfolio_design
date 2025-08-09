@@ -7,8 +7,8 @@ const Project = () => {
         <div className='bg-white text-black min-h-screen p-4 sm:p-8 md:p-12'>
             <div className="flex justify-between items-center mb-12">
                 <h2 className="text-2xl font-bold">work.</h2>
-                <button className="border border-black px-4 py-2 rounded-full text-sm font-medium hover:bg-black hover:text-white transition-colors">
-                    Show More
+                <button className="border border-black px-6 py-4 text-lg font-medium hover:bg-black hover:text-white transition-colors">
+                    <Link to="/work">show more</Link>
                 </button>
             </div>
 
