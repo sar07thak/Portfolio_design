@@ -11,11 +11,10 @@ const Project = () => {
                     <Link to="/work">show more</Link>
                 </button>
             </div>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {data.slice(0, 4).map((project, index) => (
                     <div className='border  overflow-hidden' key={index}>
-                        <Link to={`/work/${project.name}`} className="relative group block w-full h-full">
+                        <Link to={`/work/${project.name}`} className="relative group block w-full h-full" target='_blank'>
                             <img
                                 src={project.image}
                                 alt={project.name}

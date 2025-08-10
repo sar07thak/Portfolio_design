@@ -83,7 +83,7 @@ const Footer = () => {
               <span>GitHub</span>
             </a>
           </div>
-          <p className="mt-10 text-sm text-gray-500 md:text-right">
+          <p className="mt-10 text-sm text-gray-500   md:text-right">
             © {new Date().getFullYear()} Sarthak Gupta. All rights reserved.
           </p>
         </div>
