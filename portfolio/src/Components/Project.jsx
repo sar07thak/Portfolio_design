@@ -14,7 +14,7 @@ const Project = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {data.slice(0, 4).map((project, index) => (
-                    <div className='border rounded-xl overflow-hidden' key={index}>
+                    <div className='border  overflow-hidden' key={index}>
                         <Link to={`/work/${project.name}`} className="relative group block w-full h-full">
                             <img
                                 src={project.image}
