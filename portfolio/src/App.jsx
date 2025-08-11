@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './pages/Home.jsx';
+import Home from './pages/Home';
 import Work from './pages/Work';
 import ProjectDetail from './pages/ProjectDetail'; // ✅ New page
 import { Route, Routes } from 'react-router-dom'; // ✅ correct import
