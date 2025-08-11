@@ -1,10 +1,10 @@
 import React from 'react';
-import Home from "./pages/Home.jsx";
-import Work from './pages/Work.jsx';
-import ProjectDetail from './pages/ProjectDetail.jsx'; // ✅ New page
+import Home from "./Pages/Home.jsx";
+import Work from './Pages/Work.jsx';
+import ProjectDetail from './Pages/ProjectDetail.jsx'; // ✅ New page
 import { Route, Routes } from 'react-router-dom'; // ✅ correct import
-import About from './pages/About.jsx';
-import Contact from './pages/Contact.jsx';
+import About from './Pages/About.jsx';
+import Contact from './Pages/Contact.jsx';
 import CustomCursor from './components/CustomCursor.jsx';
 
 const App = () => {
