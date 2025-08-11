@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../Components/Navbar.jsx";
 import Footer from "./Footer.jsx";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

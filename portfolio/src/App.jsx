@@ -5,7 +5,7 @@ import ProjectDetail from './Pages/ProjectDetail.jsx'; // ✅ New page
 import { Route, Routes } from 'react-router-dom'; // ✅ correct import
 import About from './Pages/About.jsx';
 import Contact from './Pages/Contact.jsx';
-import CustomCursor from './components/CustomCursor.jsx';
+import CustomCursor from './Components/CustomCursor.jsx';
 
 const App = () => {
   return (

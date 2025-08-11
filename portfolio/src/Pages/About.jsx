@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Navbar from '../components/Navbar.jsx';
+import Navbar from '../Components/Navbar.jsx';
 import image from "../assets/aboutPhoto.jpeg";
 import Footer from './Footer.jsx';
 import gsap from "gsap";

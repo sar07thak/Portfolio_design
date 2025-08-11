@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import data from '../json/ProjectData.json';
-import Navbar from '../components/Navbar.jsx';
+import Navbar from '../Components/Navbar.jsx';
 import { FaQuoteLeft } from "react-icons/fa";
 import Footer from './Footer.jsx';
 import gsap from 'gsap';

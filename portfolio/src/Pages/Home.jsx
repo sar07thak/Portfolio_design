@@ -1,5 +1,5 @@
-import Project from "../components/Project.jsx";
-import Skill from "../components/Skill.jsx";
+import Project from "../Components/Project.jsx";
+import Skill from "../Components/Skill.jsx";
 import Footer from "./Footer.jsx";
 import Hero from "./Hero.jsx";
 

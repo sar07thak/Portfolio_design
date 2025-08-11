@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Navbar from '../components/Navbar.jsx';
+import Navbar from '../Components/Navbar.jsx';
 import Footer from './Footer.jsx';
 import data from "../json/ProjectData.json";
 import { Link } from 'react-router-dom';

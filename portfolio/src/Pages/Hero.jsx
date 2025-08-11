@@ -3,7 +3,7 @@ import { IoGrid } from "react-icons/io5";
 import { FiCopy } from "react-icons/fi";
 import { Link } from 'react-router-dom'; 
 import image from "../assets/a.jpg";
-import Navbar from '../components/Navbar.jsx';
+import Navbar from '../Components/Navbar.jsx';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
