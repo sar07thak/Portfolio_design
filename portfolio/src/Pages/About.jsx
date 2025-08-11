@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar.jsx';
 import image from "../assets/aboutPhoto.jpeg";
-import Footer from './Footer';
+import Footer from './Footer.jsx';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 

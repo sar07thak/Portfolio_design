@@ -1,11 +1,11 @@
 import React from 'react';
-import Home from './pages/Home';
-import Work from './pages/Work';
-import ProjectDetail from './pages/ProjectDetail'; // ✅ New page
+import Home from './pages/Home.jsx';
+import Work from './pages/Work.jsx';
+import ProjectDetail from './pages/ProjectDetail.jsx'; // ✅ New page
 import { Route, Routes } from 'react-router-dom'; // ✅ correct import
-import About from './pages/About';
-import Contact from './pages/Contact';
-import CustomCursor from './components/CustomCursor';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+import CustomCursor from './components/CustomCursor.jsx';
 
 const App = () => {
   return (

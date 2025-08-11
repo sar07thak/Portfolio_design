@@ -1,7 +1,7 @@
-import Project from "../components/Project";
-import Skill from "../components/Skill";
-import Footer from "./Footer";
-import Hero from "./Hero";
+import Project from "../components/Project.jsx";
+import Skill from "../components/Skill.jsx";
+import Footer from "./Footer.jsx";
+import Hero from "./Hero.jsx";
 
 // Main component for the entire page
 const Home = () => {
