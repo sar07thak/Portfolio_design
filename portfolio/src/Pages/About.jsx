@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar.jsx';
 import image from "../assets/aboutPhoto.jpeg";
 import Footer from './Footer.jsx';
 import gsap from "gsap";
+import cv from "../assets/Resume.pdf"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -122,7 +123,7 @@ const About = () => {
         <div className="about-header flex flex-row justify-between items-start sm:items-center gap-4 mb-10 md:mb-16">
           <h2 className="text-3xl font-medium tracking-wide">about.</h2>
           <a
-            href="/Sarthak_CV.pdf"
+            href={cv}
             download="Sarthak_Gupta_CV.pdf"
             className="flex items-center gap-2 px-10 py-3 bg-gray-200 hover:bg-black hover:text-white transition-all duration-300"
           >

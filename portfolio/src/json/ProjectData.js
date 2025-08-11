@@ -24,6 +24,9 @@ import portImage from "../assets/port.jpg";
 import portFront from "../assets/Port/Front.png";
 import port1 from "../assets/Port/1.png";
 import port2 from "../assets/Port/2.png";
+import port3 from "../assets/Port/3.png";
+import port4 from "../assets/Port/4.png";
+
 
 import furImage from "../assets/fur.jpg";
 import furFront from "../assets/Fur/Front.png";
@@ -89,7 +92,7 @@ const projects = [
     githubUrl: "https://github.com/sar07thak/Portfolio_design",
     type: "ReactJS",
     frontImage: portFront,
-    sideImage: [port1, port2],
+    sideImage: [port1, port2 , port3 , port4 ],
     year: 2025,
     about:
       "The SAGU Portfolio is a sleek and modern personal website crafted by Sarthak Gupta using React.js. Inspired by minimal design, it showcases creativity and professionalism through smooth animations and responsive layouts. Enhanced with popular libraries like React Router, Framer Motion, GSAP, and React-Bits, the site offers fluid navigation, dynamic transitions, and interactive UI elements. Perfect for developers and designers, it includes sections like Home, Work, About, and Contact—fully customizable for a strong online presence. Optimized for performance and accessibility, this portfolio reflects Sarthak’s passion for clean code and cutting-edge frontend development.---Let me know if you'd like a shorter version too!",
