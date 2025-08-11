@@ -1,35 +1,42 @@
+import epxenseImage from "../assets/expense.jpg"
+import expenseFront from "../assets/expense/Front.png"
+import expense1 from "../assets/expense/1.png"
+import expense2 from "../assets/expense/2.png"
+import expense3 from "../assets/expense/3.png"
+import expense4 from "../assets/expense/4.png"
+
+import Ecom from "../assets/eCom.jpg"
+import EcomFront from "../assets/Aure/Front.png"
+import Ecom1 from "../assets/Aure/1.png"
+import Ecom2 from "../assets/Aure/2.png"
+import Ecom3 from "../assets/Aure/3.png"
+import Ecom4 from "../assets/Aure/4.png"
+
+
+
+
 [
   {
     "name": "Expense Tracker",
-    "image": "../assets/expense.jpg",
+    "image": epxenseImage ,
     "WorkingUrl": "https://expensetracker-front-rpp5.onrender.com/",
     "githubUrl": "https://github.com/sar07thak/ExpenseTracker",
     "type": "MERN",
     "year": 2025,
-    "frontImage": "../assets/expense/Front.png",
-    "sideImage": [
-      "../assets/expense/1.png",
-      "../assets/expense/2.png",
-      "../assets/expense/3.png",
-      "../assets/expense/4.png"
-    ],
+    "frontImage": expenseFront ,
+    "sideImage": [ expense1 , expense2 , expense3 , expense4 ],
     "shortDescription": "The Expense Tracker project is a sleek and functional, combining seamless UI with powerful backend logic to help users manage income and expenses effortlessly in real-time.",
     "about": "The Expense Tracker App is a full-stack MERN (MongoDB, Express.js, React, Node.js) application designed to help users manage their finances effortlessly. It allows users to securely sign up or log in, track income and expenses with timestamps, upload avatar images, and view a responsive dashboard. Built with React and Tailwind CSS, the app ensures a clean and interactive UI. Data is securely stored using MongoDB Atlas, and the app is fully deployed on Render, offering accessibility across devices."
   },
   {
     "name": "E-Commerece",
-    "image": "../assets/eCom.jpg",
+    "image": Ecom ,
     "WorkingUrl": "https://e-commerce-mern-frontend-vr2x.onrender.com/login",
     "githubUrl": "https://github.com/sar07thak/E-COMMERCE-MERN",
     "type": "MERN",
     "year": 2025,
-    "frontImage": "../assets/Aure/Front.png",
-    "sideImage": [
-      "../assets/Aure/1.png",
-      "../assets/Aure/2.png",
-      "../assets/Aure/3.png",
-      "../assets/Aure/4.png"
-    ],
+    "frontImage": EcomFront,
+    "sideImage": [ Ecom1 , Ecom2 , Ecom3 , Ecom4 ],
     "about": "The MERN E-Commerce Platform is a complete full-stack application built with MongoDB, Express.js, React, and Node.js, offering a seamless shopping experience for both users and admins. Customers can sign up, browse products, manage carts, and place orders with ease, while JWT authentication ensures secure access. The platform also includes a dedicated Admin Panel for managing products, users, and orders, along with real-time dashboard stats.The frontend is built using React, Tailwind CSS, and Context API for state management, providing a clean and responsive interface. The backend leverages Express, Mongoose, and JWT for robust and scalable data handling.",
     "shortDescription" : "A full-stack MERN e-commerce platform featuring secure authentication, a responsive shopping experience, and an admin panel to manage products, users, and orders."
   },

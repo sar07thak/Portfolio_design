@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import data from '../json/ProjectData.json';
+import data from '../json/ProjectData.js';
 import Navbar from '../Components/Navbar.jsx';
 import { FaQuoteLeft } from "react-icons/fa";
 import Footer from './Footer.jsx';
