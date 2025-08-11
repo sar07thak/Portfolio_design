@@ -5,12 +5,27 @@ const CustomCursor = () => {
   const dotRef = useRef(null);
 
   useEffect(() => {
+    // Detect touch devices
+    const isTouchDevice =
+      "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+    if (isTouchDevice) {
+      // If touch device, do not attach cursor events (disable cursor)
+      if (circleRef.current) circleRef.current.style.display = "none";
+      if (dotRef.current) dotRef.current.style.display = "none";
+      return;
+    }
+
     const moveCursor = (e) => {
       const { clientX, clientY } = e;
 
       if (circleRef.current && dotRef.current) {
-        circleRef.current.style.transform = `translate(${clientX - 24}px, ${clientY - 24}px)`;
-        dotRef.current.style.transform = `translate(${clientX - 4}px, ${clientY - 4}px)`;
+        circleRef.current.style.transform = `translate(${clientX - 24}px, ${
+          clientY - 24
+        }px)`;
+        dotRef.current.style.transform = `translate(${clientX - 4}px, ${
+          clientY - 4
+        }px)`;
       }
     };
 
@@ -22,11 +37,13 @@ const CustomCursor = () => {
 
     const handleUnhover = () => {
       if (circleRef.current) {
-        circleRef.current.style.transform = circleRef.current.style.transform.replace(/scale\(\d+(\.\d+)?\)/, '');
+        circleRef.current.style.transform = circleRef.current.style.transform.replace(
+          /scale\(\d+(\.\d+)?\)/,
+          ""
+        );
       }
     };
 
-    // Elements that should trigger scale on hover
     const interactiveElements = document.querySelectorAll(
       "button, a, img, .cursor-hover"
     );
