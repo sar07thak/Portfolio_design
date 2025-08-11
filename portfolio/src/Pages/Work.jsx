@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import Navbar from '../../src/components/Navbar.jsx';
-import Footer from './Footer.jsx';
-import data from "../json/ProjectData.json";
+import Navbar from '../components/Navbar';
+import Footer from './Footer';
+import data from "../json/ProjectData";
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

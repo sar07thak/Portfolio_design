@@ -1,5 +1,5 @@
 import React from 'react';
-import data from "../json/ProjectData.json";
+import data from "../json/ProjectData";
 import { Link } from 'react-router-dom'; // ✅ correct import
 
 const Project = () => {

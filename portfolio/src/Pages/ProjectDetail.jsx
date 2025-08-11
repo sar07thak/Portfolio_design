@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import data from '../../src/json/ProjectData.json';
-import Navbar from '../../src/components/Navbar.jsx';
+import data from '../json/ProjectData';
+import Navbar from '../components/Navbar';
 import { FaQuoteLeft } from "react-icons/fa";
-import Footer from './Footer.jsx';
+import Footer from './Footer';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
