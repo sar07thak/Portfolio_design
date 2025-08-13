@@ -7,6 +7,7 @@ import Hero from "./Hero.jsx";
 const Home = () => {
   return (
     <>
+    
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
