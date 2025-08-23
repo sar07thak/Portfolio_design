@@ -124,7 +124,7 @@ const About = () => {
           <h2 className="text-3xl font-medium tracking-wide">about.</h2>
           <a
             href={cv}
-            download="Sarthak_Gupta_CV.pdf"
+            download="Sarthak_resume.pdf"
             className="flex items-center gap-2 px-10 py-3 bg-gray-200 hover:bg-black hover:text-white transition-all duration-300"
           >
             Read.CV

@@ -53,7 +53,7 @@ const Footer = () => {
 
           <div className="flex flex-col sm:flex-row items-center gap-5">
             <button className="bg-white text-black px-8 py-4 font-semibold text-lg hover:bg-gray-200 transition-colors">
-              Get in Touch
+              <Link to="/contact">Get in Touch</Link>
             </button>
             <div className="flex items-center gap-3">
               <span className="relative flex h-3 w-3">
