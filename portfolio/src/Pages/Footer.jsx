@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Link } from 'react-router';
 
 gsap.registerPlugin(ScrollTrigger);
 
