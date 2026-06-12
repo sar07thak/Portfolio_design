@@ -46,7 +46,7 @@ const projects = [
   {
     name: "Expense Tracker",
     image: expenseImage,
-    WorkingUrl: "https://expense-tracker-six-psi-69.vercel.app/login",
+    WorkingUrl: "https://expense-tracker-six-psi-69.vercel.app",
     githubUrl: "https://github.com/sar07thak/ExpenseTracker",
     type: "MERN",
     year: 2025,
